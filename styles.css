@@ -601,6 +601,95 @@ section {
   letter-spacing: 0.08em;
 }
 
+.cert-view-btn {
+  margin-left: auto;
+  border: 1px solid var(--surface-2);
+  background: transparent;
+  color: var(--sky);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cert-view-btn:hover {
+  border-color: var(--sky);
+  box-shadow: 0 0 12px rgba(56,189,248,0.15);
+}
+
+.cert-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: none;
+}
+
+.cert-modal.open {
+  display: block;
+}
+
+.cert-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(2px);
+}
+
+.cert-modal-panel {
+  position: relative;
+  width: min(900px, calc(100vw - 2rem));
+  max-height: calc(100vh - 3rem);
+  margin: 1.5rem auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.cert-modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  margin: 0 2rem 1rem 0;
+}
+
+.cert-modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cert-modal-close:hover {
+  color: var(--text);
+  border-color: var(--sky);
+}
+
+.cert-modal-body img,
+.cert-modal-body iframe {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.cert-modal-body iframe {
+  min-height: 70vh;
+}
+
+.cert-modal-empty {
+  color: var(--muted);
+}
+
 /* ── CONTACT (sky theme) ── */
 #contact {
   padding: 8rem 2.5rem;
@@ -802,4 +891,6 @@ footer {
   .timeline-body { padding-left: 0; }
   .contact-layout { grid-template-columns: 1fr; }
   .contact-copy { max-width: 100%; }
+  .cert-item { align-items: flex-start; gap: 0.8rem; flex-wrap: wrap; }
+  .cert-view-btn { margin-left: 1.5rem; }
 }

@@ -223,21 +223,25 @@
         <div class="cert-dot"></div>
         <div class="cert-name">Ethical Hacker</div>
         <div class="cert-issuer">AALTI / Cisco</div>
+        <button type="button" class="cert-view-btn" data-cert-title="Ethical Hacker" data-cert-src="certificates\Ethical_Hacker_certificate_sean-kariri-riarauniversity-ac-ke_f0a60cb0-8fb8-4be1-b93b-5e54a83b1710.pdf">View Certificate</button>
       </div>
       <div class="cert-item">
         <div class="cert-dot"></div>
         <div class="cert-name">IBM SkillsBuild Cybersecurity Certificate</div>
         <div class="cert-issuer">IBM SkillsBuild</div>
+        <button type="button" class="cert-view-btn" data-cert-title="IBM SkillsBuild Cybersecurity Certificate" data-cert-src="certificates\IBM Cybersecurity Certificate.pdf">View Certificate</button>
       </div>
       <div class="cert-item">
         <div class="cert-dot"></div>
         <div class="cert-name">Cybersecurity Fundamentals</div>
         <div class="cert-issuer">IBM SkillsBuild</div>
+        <button type="button" class="cert-view-btn" data-cert-title="Cybersecurity Fundamentals" data-cert-src="certificates\IBM Cybersecurity Fundamentals.pdf">View Certificate</button>
       </div>
       <div class="cert-item">
         <div class="cert-dot"></div>
         <div class="cert-name">Introduction to Cybersecurity</div>
         <div class="cert-issuer">Cisco Networking Academy</div>
+        <button type="button" class="cert-view-btn" data-cert-title="Introduction to Cybersecurity" data-cert-src="certificates\Introduction_to_Cybersecurity_Badge20240517-8-qxqxzl.pdf">View Certificate</button>
       </div>
     </div>
 
@@ -247,6 +251,7 @@
         <div class="cert-dot"></div>
         <div class="cert-name">AI Fundamentals with Capstone</div>
         <div class="cert-issuer">IBM SkillsBuild</div>
+        <button type="button" class="cert-view-btn" data-cert-title="AI Fundamentals with Capstone" data-cert-src="certificates\IBMDesign Fundamentals of AI with Capstone.pdf">View Certificate</button>
       </div>
     </div>
 
@@ -256,16 +261,19 @@
         <div class="cert-dot"></div>
         <div class="cert-name">CPA — Programming Essentials in C++</div>
         <div class="cert-issuer">Cisco Networking Academy</div>
+        <button type="button" class="cert-view-btn" data-cert-title="CPA — Programming Essentials in C++" data-cert-src="certificates\Sean GachanjaKariri-CPA - Programmin-certificate.pdf">View Certificate</button>
       </div>
       <div class="cert-item">
         <div class="cert-dot"></div>
         <div class="cert-name">CLA — Programming Essentials in C</div>
         <div class="cert-issuer">Cisco Networking Academy</div>
+        <button type="button" class="cert-view-btn" data-cert-title="CLA — Programming Essentials in C" data-cert-src="certificates\Partner-_CLA_-_Programming_Essentials_in_C_certificate_sean-kariri-riarauniversity-ac-ke_4296bc08-f6fd-4e46-8067-5a32966b7730.pdf">View Certificate</button>
       </div>
       <div class="cert-item">
         <div class="cert-dot"></div>
         <div class="cert-name">IT Essentials</div>
         <div class="cert-issuer">Cisco Networking Academy</div>
+        <button type="button" class="cert-view-btn" data-cert-title="IT Essentials" data-cert-src="certificates\Sean GachanjaKariri-IT Essentials-certificate.pdf">View Certificate</button>
       </div>
     </div>
 
@@ -275,15 +283,28 @@
         <div class="cert-dot"></div>
         <div class="cert-name">Digital Marketing & E-Commerce</div>
         <div class="cert-issuer">Google Digital Academy</div>
+        <button type="button" class="cert-view-btn" data-cert-title="Digital Marketing & E-Commerce" data-cert-src="certificates\Googel digital skills for Africa Digital Marketing certificate.pdf">View Certificate</button>
       </div>
       <div class="cert-item">
         <div class="cert-dot"></div>
         <div class="cert-name">Fundamentals of Digital Marketing</div>
         <div class="cert-issuer">Ajira Digital Program</div>
+        <button type="button" class="cert-view-btn" data-cert-title="Fundamentals of Digital Marketing" data-cert-src="certificates\Ajira Digital - Digital Marketing and Ecommerce Training and Mentorship.pdf">View Certificate</button>
       </div>
     </div>
   </div>
 </section>
+
+<div class="cert-modal" id="certModal" aria-hidden="true">
+  <div class="cert-modal-backdrop" data-modal-close></div>
+  <div class="cert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <button type="button" class="cert-modal-close" data-modal-close aria-label="Close certificate popup">✕</button>
+    <h3 class="cert-modal-title" id="certModalTitle">Certificate</h3>
+    <div class="cert-modal-body" id="certModalBody">
+      <p class="cert-modal-empty">No certificate media linked yet. Add a file path in the button's <code>data-cert-src</code> attribute.</p>
+    </div>
+  </div>
+</div>
 
 <div class="divider"></div>
 
